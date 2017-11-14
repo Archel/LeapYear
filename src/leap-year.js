@@ -1,7 +1,12 @@
 module.exports.leapYear = (year) => {
-    if (year === 100 || year === 200 || year === 300) {
-        return false
+    
+    return isDivisibleByFour(year) && !isDivisibleByOneHundred(year)
+
+    function isDivisibleByFour(number) {
+        return number % 4 === 0
     }
 
-    return year % 4 === 0
+    function isDivisibleByOneHundred(number) {
+        return number % 100 === 0
+    }
 }
