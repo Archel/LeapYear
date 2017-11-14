@@ -16,4 +16,8 @@ describe("Leap Year should", () => {
     it("Mark 6 as a common year", () => {
         expect(leapYear(6)).toBe(false)
     })
+
+    it("Mark 100 as a common year", () => {
+        expect(leapYear(100)).toBe(false)
+    })
 })
