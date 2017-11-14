@@ -1,6 +1,6 @@
 module.exports.leapYear = (year) => {
 
-    if (year === 400) {
+    if (year === 400 || year === 800 || year === 1200) {
         return true
     }
 

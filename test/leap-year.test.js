@@ -32,4 +32,12 @@ describe("Leap Year should", () => {
     it("Mark 400 as a leap year", () => {
         expect(leapYear(400)).toBe(true)
     })
+
+    it("Mark 800 as a leap year", () => {
+        expect(leapYear(800)).toBe(true)
+    })
+
+    it("Mark 1200 as a leap year", () => {
+        expect(leapYear(1200)).toBe(true)
+    })
 })
